@@ -1,0 +1,17 @@
+[0.499s] Invoking command in '/home/cody/ws_moveit/build/robot_arm_2025_tasks': PYTHONPATH=/home/cody/ws_moveit/build/robot_arm_2025_tasks/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/cody/ws_moveit/build/robot_arm_2025_tasks/build --no-deps symlink_data
+[0.633s] running develop
+[0.707s] running egg_info
+[0.707s] writing robot_arm_2025_tasks.egg-info/PKG-INFO
+[0.707s] writing dependency_links to robot_arm_2025_tasks.egg-info/dependency_links.txt
+[0.707s] writing entry points to robot_arm_2025_tasks.egg-info/entry_points.txt
+[0.708s] writing requirements to robot_arm_2025_tasks.egg-info/requires.txt
+[0.708s] writing top-level names to robot_arm_2025_tasks.egg-info/top_level.txt
+[0.709s] reading manifest file 'robot_arm_2025_tasks.egg-info/SOURCES.txt'
+[0.709s] writing manifest file 'robot_arm_2025_tasks.egg-info/SOURCES.txt'
+[0.710s] running build_ext
+[0.710s] Creating /home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages/robot-arm-2025-tasks.egg-link (link to .)
+[0.711s] Installing typing_node script to /home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/robot_arm_2025_tasks
+[0.711s] 
+[0.711s] Installed /home/cody/ws_moveit/build/robot_arm_2025_tasks
+[0.711s] running symlink_data
+[0.727s] Invoked command in '/home/cody/ws_moveit/build/robot_arm_2025_tasks' returned '0': PYTHONPATH=/home/cody/ws_moveit/build/robot_arm_2025_tasks/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/cody/ws_moveit/build/robot_arm_2025_tasks/build --no-deps symlink_data

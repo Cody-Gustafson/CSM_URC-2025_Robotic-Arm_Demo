@@ -1,0 +1,45 @@
+[0.017s] Invoking command in '/home/cody/ws_moveit/build/robot_arm_2025': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cody/ws_moveit/install/robot_arm_2025_tasks:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake --build /home/cody/ws_moveit/build/robot_arm_2025 -- -j20 -l20
+[0.295s] Invoked command in '/home/cody/ws_moveit/build/robot_arm_2025' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cody/ws_moveit/install/robot_arm_2025_tasks:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake --build /home/cody/ws_moveit/build/robot_arm_2025 -- -j20 -l20
+[0.302s] Invoking command in '/home/cody/ws_moveit/build/robot_arm_2025': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cody/ws_moveit/install/robot_arm_2025_tasks:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake --install /home/cody/ws_moveit/build/robot_arm_2025
+[0.306s] -- Install configuration: ""
+[0.307s] -- Execute custom install script
+[0.308s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/urdf/robot_arm_2025.urdf
+[0.309s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/collision/heavy_lift_claw_subassembly_link_collision.stl
+[0.309s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/collision/metal_worm_gear__configuration_default_collision.stl
+[0.309s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/collision/v2_base_subassembly_link_collision.stl
+[0.309s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/collision/v2_j1_subassembly_link_collision.stl
+[0.310s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/collision/v2_j3_a_collision.stl
+[0.310s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/collision/v2_j3_pushrod__length_0_376247_meter_collision.stl
+[0.311s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/collision/v2_j4_subassembly_link_collision.stl
+[0.311s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/collision/v2_j5_a_collision.stl
+[0.312s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/collision/v2_limb_1_subassembly_link_collision.stl
+[0.312s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/collision/v2_limb_2_subassembly_link_collision.stl
+[0.312s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/collision/v2_linkage_subassembly_link_collision.stl
+[0.312s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/visual/heavy_lift_claw_subassembly_link.stl
+[0.312s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/visual/metal_worm_gear__configuration_default.stl
+[0.313s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/visual/v2_base_subassembly_link.stl
+[0.313s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/visual/v2_j1_subassembly_link.stl
+[0.313s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/visual/v2_j3_a.stl
+[0.313s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/visual/v2_j3_pushrod__length_0_376247_meter.stl
+[0.313s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/visual/v2_j4_subassembly_link.stl
+[0.314s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/visual/v2_j5_a.stl
+[0.314s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/visual/v2_limb_1_subassembly_link.stl
+[0.314s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/visual/v2_limb_2_subassembly_link.stl
+[0.314s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/meshes/visual/v2_linkage_subassembly_link.stl
+[0.315s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/launch/display.launch.py
+[0.315s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/ament_index/resource_index/package_run_dependencies/robot_arm_2025
+[0.315s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/ament_index/resource_index/parent_prefix_path/robot_arm_2025
+[0.316s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/environment/ament_prefix_path.sh
+[0.316s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/environment/ament_prefix_path.dsv
+[0.316s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/environment/path.sh
+[0.317s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/environment/path.dsv
+[0.319s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/local_setup.bash
+[0.319s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/local_setup.sh
+[0.321s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/local_setup.zsh
+[0.321s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/local_setup.dsv
+[0.321s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/package.dsv
+[0.327s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/ament_index/resource_index/packages/robot_arm_2025
+[0.328s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/cmake/robot_arm_2025Config.cmake
+[0.328s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/cmake/robot_arm_2025Config-version.cmake
+[0.328s] -- Up-to-date symlink: /home/cody/ws_moveit/install/robot_arm_2025/share/robot_arm_2025/package.xml
+[0.329s] Invoked command in '/home/cody/ws_moveit/build/robot_arm_2025' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cody/ws_moveit/install/robot_arm_2025_tasks:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake --install /home/cody/ws_moveit/build/robot_arm_2025

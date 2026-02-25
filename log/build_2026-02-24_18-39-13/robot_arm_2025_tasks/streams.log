@@ -1,0 +1,21 @@
+[0.306s] Invoking command in '/home/cody/ws_moveit/src/robot_arm_2025_tasks': PYTHONPATH=/home/cody/ws_moveit/build/robot_arm_2025_tasks/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_arm_2025_tasks build --build-base /home/cody/ws_moveit/build/robot_arm_2025_tasks/build install --record /home/cody/ws_moveit/build/robot_arm_2025_tasks/install.log --single-version-externally-managed install_data
+[0.419s] running egg_info
+[0.419s] writing ../../build/robot_arm_2025_tasks/robot_arm_2025_tasks.egg-info/PKG-INFO
+[0.420s] writing dependency_links to ../../build/robot_arm_2025_tasks/robot_arm_2025_tasks.egg-info/dependency_links.txt
+[0.420s] writing entry points to ../../build/robot_arm_2025_tasks/robot_arm_2025_tasks.egg-info/entry_points.txt
+[0.420s] writing requirements to ../../build/robot_arm_2025_tasks/robot_arm_2025_tasks.egg-info/requires.txt
+[0.420s] writing top-level names to ../../build/robot_arm_2025_tasks/robot_arm_2025_tasks.egg-info/top_level.txt
+[0.421s] reading manifest file '../../build/robot_arm_2025_tasks/robot_arm_2025_tasks.egg-info/SOURCES.txt'
+[0.421s] writing manifest file '../../build/robot_arm_2025_tasks/robot_arm_2025_tasks.egg-info/SOURCES.txt'
+[0.421s] running build
+[0.421s] running build_py
+[0.422s] running install
+[0.422s] running install_lib
+[0.422s] running install_data
+[0.423s] running install_egg_info
+[0.424s] removing '/home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages/robot_arm_2025_tasks-0.0.0-py3.10.egg-info' (and everything under it)
+[0.424s] Copying ../../build/robot_arm_2025_tasks/robot_arm_2025_tasks.egg-info to /home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages/robot_arm_2025_tasks-0.0.0-py3.10.egg-info
+[0.424s] running install_scripts
+[0.436s] Installing typing_node script to /home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/robot_arm_2025_tasks
+[0.436s] writing list of installed files to '/home/cody/ws_moveit/build/robot_arm_2025_tasks/install.log'
+[0.448s] Invoked command in '/home/cody/ws_moveit/src/robot_arm_2025_tasks' returned '0': PYTHONPATH=/home/cody/ws_moveit/build/robot_arm_2025_tasks/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_arm_2025_tasks build --build-base /home/cody/ws_moveit/build/robot_arm_2025_tasks/build install --record /home/cody/ws_moveit/build/robot_arm_2025_tasks/install.log --single-version-externally-managed install_data

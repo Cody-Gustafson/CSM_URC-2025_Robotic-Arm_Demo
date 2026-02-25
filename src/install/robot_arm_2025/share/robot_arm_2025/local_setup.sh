@@ -1,0 +1,1 @@
+/home/cody/ws_moveit/src/build/robot_arm_2025/ament_cmake_environment_hooks/local_setup.sh

@@ -1,0 +1,3 @@
+[console_scripts]
+trajectory_to_serial = robot_arm_2025_control.trajectory_to_serial:main
+

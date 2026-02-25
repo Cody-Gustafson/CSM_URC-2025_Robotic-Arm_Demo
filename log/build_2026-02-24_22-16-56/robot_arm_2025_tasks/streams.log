@@ -1,0 +1,36 @@
+[0.367s] Invoking command in '/home/cody/ws_moveit/build/robot_arm_2025_tasks': PYTHONPATH=/home/cody/ws_moveit/build/robot_arm_2025_tasks/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/cody/ws_moveit/build/robot_arm_2025_tasks/build
+[0.511s] running develop
+[0.592s] Removing /home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages/robot-arm-2025-tasks.egg-link (link to .)
+[0.608s] Invoked command in '/home/cody/ws_moveit/build/robot_arm_2025_tasks' returned '0': PYTHONPATH=/home/cody/ws_moveit/build/robot_arm_2025_tasks/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/cody/ws_moveit/build/robot_arm_2025_tasks/build
+[0.610s] Invoking command in '/home/cody/ws_moveit/src/robot_arm_2025_tasks': PYTHONPATH=/home/cody/ws_moveit/build/robot_arm_2025_tasks/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_arm_2025_tasks build --build-base /home/cody/ws_moveit/build/robot_arm_2025_tasks/build install --record /home/cody/ws_moveit/build/robot_arm_2025_tasks/install.log --single-version-externally-managed install_data --force
+[0.743s] running egg_info
+[0.743s] writing ../../build/robot_arm_2025_tasks/robot_arm_2025_tasks.egg-info/PKG-INFO
+[0.744s] writing dependency_links to ../../build/robot_arm_2025_tasks/robot_arm_2025_tasks.egg-info/dependency_links.txt
+[0.744s] writing entry points to ../../build/robot_arm_2025_tasks/robot_arm_2025_tasks.egg-info/entry_points.txt
+[0.744s] writing requirements to ../../build/robot_arm_2025_tasks/robot_arm_2025_tasks.egg-info/requires.txt
+[0.744s] writing top-level names to ../../build/robot_arm_2025_tasks/robot_arm_2025_tasks.egg-info/top_level.txt
+[0.745s] reading manifest file '../../build/robot_arm_2025_tasks/robot_arm_2025_tasks.egg-info/SOURCES.txt'
+[0.745s] writing manifest file '../../build/robot_arm_2025_tasks/robot_arm_2025_tasks.egg-info/SOURCES.txt'
+[0.746s] running build
+[0.746s] running build_py
+[0.746s] copying robot_arm_2025_tasks/typing_node.py -> /home/cody/ws_moveit/build/robot_arm_2025_tasks/build/lib/robot_arm_2025_tasks
+[0.746s] running install
+[0.746s] running install_lib
+[0.747s] creating /home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages/robot_arm_2025_tasks
+[0.747s] copying /home/cody/ws_moveit/build/robot_arm_2025_tasks/build/lib/robot_arm_2025_tasks/keyboard_geometry.py -> /home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages/robot_arm_2025_tasks
+[0.747s] copying /home/cody/ws_moveit/build/robot_arm_2025_tasks/build/lib/robot_arm_2025_tasks/__init__.py -> /home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages/robot_arm_2025_tasks
+[0.747s] copying /home/cody/ws_moveit/build/robot_arm_2025_tasks/build/lib/robot_arm_2025_tasks/key_map.py -> /home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages/robot_arm_2025_tasks
+[0.747s] copying /home/cody/ws_moveit/build/robot_arm_2025_tasks/build/lib/robot_arm_2025_tasks/typing_node.py -> /home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages/robot_arm_2025_tasks
+[0.748s] byte-compiling /home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages/robot_arm_2025_tasks/keyboard_geometry.py to keyboard_geometry.cpython-310.pyc
+[0.748s] byte-compiling /home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages/robot_arm_2025_tasks/__init__.py to __init__.cpython-310.pyc
+[0.748s] byte-compiling /home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages/robot_arm_2025_tasks/key_map.py to key_map.cpython-310.pyc
+[0.749s] byte-compiling /home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages/robot_arm_2025_tasks/typing_node.py to typing_node.cpython-310.pyc
+[0.750s] running install_data
+[0.750s] copying resource/robot_arm_2025_tasks -> /home/cody/ws_moveit/install/robot_arm_2025_tasks/share/ament_index/resource_index/packages
+[0.750s] copying package.xml -> /home/cody/ws_moveit/install/robot_arm_2025_tasks/share/robot_arm_2025_tasks
+[0.750s] running install_egg_info
+[0.751s] Copying ../../build/robot_arm_2025_tasks/robot_arm_2025_tasks.egg-info to /home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages/robot_arm_2025_tasks-0.0.0-py3.10.egg-info
+[0.752s] running install_scripts
+[0.766s] Installing typing_node script to /home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/robot_arm_2025_tasks
+[0.766s] writing list of installed files to '/home/cody/ws_moveit/build/robot_arm_2025_tasks/install.log'
+[0.781s] Invoked command in '/home/cody/ws_moveit/src/robot_arm_2025_tasks' returned '0': PYTHONPATH=/home/cody/ws_moveit/build/robot_arm_2025_tasks/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_arm_2025_tasks build --build-base /home/cody/ws_moveit/build/robot_arm_2025_tasks/build install --record /home/cody/ws_moveit/build/robot_arm_2025_tasks/install.log --single-version-externally-managed install_data --force

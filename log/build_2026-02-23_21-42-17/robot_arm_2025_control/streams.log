@@ -1,0 +1,17 @@
+[0.354s] Invoking command in '/home/cody/ws_moveit/build/robot_arm_2025_control': PYTHONPATH=/home/cody/ws_moveit/build/robot_arm_2025_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cody/ws_moveit/install/robot_arm_2025_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/cody/ws_moveit/build/robot_arm_2025_control/build --no-deps symlink_data
+[0.489s] running develop
+[0.563s] running egg_info
+[0.563s] writing robot_arm_2025_control.egg-info/PKG-INFO
+[0.563s] writing dependency_links to robot_arm_2025_control.egg-info/dependency_links.txt
+[0.564s] writing entry points to robot_arm_2025_control.egg-info/entry_points.txt
+[0.564s] writing requirements to robot_arm_2025_control.egg-info/requires.txt
+[0.564s] writing top-level names to robot_arm_2025_control.egg-info/top_level.txt
+[0.565s] reading manifest file 'robot_arm_2025_control.egg-info/SOURCES.txt'
+[0.565s] writing manifest file 'robot_arm_2025_control.egg-info/SOURCES.txt'
+[0.566s] running build_ext
+[0.566s] Creating /home/cody/ws_moveit/install/robot_arm_2025_control/lib/python3.10/site-packages/robot-arm-2025-control.egg-link (link to .)
+[0.566s] Installing trajectory_to_serial script to /home/cody/ws_moveit/install/robot_arm_2025_control/lib/robot_arm_2025_control
+[0.567s] 
+[0.567s] Installed /home/cody/ws_moveit/build/robot_arm_2025_control
+[0.567s] running symlink_data
+[0.582s] Invoked command in '/home/cody/ws_moveit/build/robot_arm_2025_control' returned '0': PYTHONPATH=/home/cody/ws_moveit/build/robot_arm_2025_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cody/ws_moveit/install/robot_arm_2025_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/cody/ws_moveit/build/robot_arm_2025_control/build --no-deps symlink_data

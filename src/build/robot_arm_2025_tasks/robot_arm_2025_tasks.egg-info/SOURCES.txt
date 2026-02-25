@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+resource/robot_arm_2025_tasks
+robot_arm_2025_tasks/__init__.py
+robot_arm_2025_tasks/key_map.py
+robot_arm_2025_tasks/keyboard_geometry.py
+robot_arm_2025_tasks/typing_node.py
+robot_arm_2025_tasks.egg-info/PKG-INFO
+robot_arm_2025_tasks.egg-info/SOURCES.txt
+robot_arm_2025_tasks.egg-info/dependency_links.txt
+robot_arm_2025_tasks.egg-info/entry_points.txt
+robot_arm_2025_tasks.egg-info/requires.txt
+robot_arm_2025_tasks.egg-info/top_level.txt
+robot_arm_2025_tasks.egg-info/zip-safe

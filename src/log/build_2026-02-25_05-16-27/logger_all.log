@@ -1,0 +1,301 @@
+[0.153s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.153s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x786a2515a170>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x786a252dae60>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x786a252dae60>>, mixin_verb=('build',))
+[0.335s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.336s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.336s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.336s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.336s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.336s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.336s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/cody/ws_moveit/src'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025) by extension 'ignore'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025) by extension 'ignore_ament_install'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025) by extensions ['colcon_pkg']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025) by extension 'colcon_pkg'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025) by extensions ['colcon_meta']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025) by extension 'colcon_meta'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025) by extensions ['ros']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025) by extension 'ros'
+[0.347s] DEBUG:colcon.colcon_core.package_identification:Package 'robot_arm_2025' with type 'ros.ament_cmake' and name 'robot_arm_2025'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_config) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_config) by extension 'ignore'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_config) by extension 'ignore_ament_install'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_config) by extensions ['colcon_pkg']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_config) by extension 'colcon_pkg'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_config) by extensions ['colcon_meta']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_config) by extension 'colcon_meta'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_config) by extensions ['ros']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_config) by extension 'ros'
+[0.348s] DEBUG:colcon.colcon_core.package_identification:Package 'robot_arm_2025_config' with type 'ros.ament_cmake' and name 'robot_arm_2025_config'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_control) by extensions ['ignore', 'ignore_ament_install']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_control) by extension 'ignore'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_control) by extension 'ignore_ament_install'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_control) by extensions ['colcon_pkg']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_control) by extension 'colcon_pkg'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_control) by extensions ['colcon_meta']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_control) by extension 'colcon_meta'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_control) by extensions ['ros']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_control) by extension 'ros'
+[0.349s] DEBUG:colcon.colcon_core.package_identification:Package 'robot_arm_2025_control' with type 'ros.ament_python' and name 'robot_arm_2025_control'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_tasks) by extensions ['ignore', 'ignore_ament_install']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_tasks) by extension 'ignore'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_tasks) by extension 'ignore_ament_install'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_tasks) by extensions ['colcon_pkg']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_tasks) by extension 'colcon_pkg'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_tasks) by extensions ['colcon_meta']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_tasks) by extension 'colcon_meta'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_tasks) by extensions ['ros']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(robot_arm_2025_tasks) by extension 'ros'
+[0.350s] DEBUG:colcon.colcon_core.package_identification:Package 'robot_arm_2025_tasks' with type 'ros.ament_python' and name 'robot_arm_2025_tasks'
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.375s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.375s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.378s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/cody/ws_moveit/install
+[0.379s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 357 installed packages in /opt/ros/humble
+[0.380s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025' build argument 'cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025' build argument 'cmake_target' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025' build argument 'cmake_clean_cache' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025' build argument 'cmake_clean_first' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025' build argument 'cmake_force_configure' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025' build argument 'ament_cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025' build argument 'catkin_cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.444s] DEBUG:colcon.colcon_core.verb:Building package 'robot_arm_2025' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cody/ws_moveit/src/build/robot_arm_2025', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cody/ws_moveit/src/install/robot_arm_2025', 'merge_install': False, 'path': '/home/cody/ws_moveit/src/robot_arm_2025', 'symlink_install': True, 'test_result_base': None}
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_control' build argument 'cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_control' build argument 'cmake_target' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.444s] DEBUG:colcon.colcon_core.verb:Building package 'robot_arm_2025_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cody/ws_moveit/src/build/robot_arm_2025_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cody/ws_moveit/src/install/robot_arm_2025_control', 'merge_install': False, 'path': '/home/cody/ws_moveit/src/robot_arm_2025_control', 'symlink_install': True, 'test_result_base': None}
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_tasks' build argument 'cmake_args' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_tasks' build argument 'cmake_target' from command line to 'None'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_tasks' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_tasks' build argument 'cmake_clean_cache' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_tasks' build argument 'cmake_clean_first' from command line to 'False'
+[0.444s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_tasks' build argument 'cmake_force_configure' from command line to 'False'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_tasks' build argument 'ament_cmake_args' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_tasks' build argument 'catkin_cmake_args' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_tasks' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.445s] DEBUG:colcon.colcon_core.verb:Building package 'robot_arm_2025_tasks' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cody/ws_moveit/src/build/robot_arm_2025_tasks', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cody/ws_moveit/src/install/robot_arm_2025_tasks', 'merge_install': False, 'path': '/home/cody/ws_moveit/src/robot_arm_2025_tasks', 'symlink_install': True, 'test_result_base': None}
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_config' build argument 'cmake_args' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_config' build argument 'cmake_target' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'robot_arm_2025_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.445s] DEBUG:colcon.colcon_core.verb:Building package 'robot_arm_2025_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cody/ws_moveit/src/build/robot_arm_2025_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cody/ws_moveit/src/install/robot_arm_2025_config', 'merge_install': False, 'path': '/home/cody/ws_moveit/src/robot_arm_2025_config', 'symlink_install': True, 'test_result_base': None}
+[0.445s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.446s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.446s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/cody/ws_moveit/src/robot_arm_2025' with build type 'ament_cmake'
+[0.446s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/cody/ws_moveit/src/robot_arm_2025'
+[0.450s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.450s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.450s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.452s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/cody/ws_moveit/src/robot_arm_2025_control' with build type 'ament_python'
+[0.452s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_arm_2025_control', 'ament_prefix_path')
+[0.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cody/ws_moveit/src/install/robot_arm_2025_control/share/robot_arm_2025_control/hook/ament_prefix_path.ps1'
+[0.453s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cody/ws_moveit/src/install/robot_arm_2025_control/share/robot_arm_2025_control/hook/ament_prefix_path.dsv'
+[0.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cody/ws_moveit/src/install/robot_arm_2025_control/share/robot_arm_2025_control/hook/ament_prefix_path.sh'
+[0.454s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.454s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.456s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/cody/ws_moveit/src/robot_arm_2025_tasks' with build type 'ament_python'
+[0.456s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_arm_2025_tasks', 'ament_prefix_path')
+[0.456s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cody/ws_moveit/src/install/robot_arm_2025_tasks/share/robot_arm_2025_tasks/hook/ament_prefix_path.ps1'
+[0.457s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cody/ws_moveit/src/install/robot_arm_2025_tasks/share/robot_arm_2025_tasks/hook/ament_prefix_path.dsv'
+[0.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cody/ws_moveit/src/install/robot_arm_2025_tasks/share/robot_arm_2025_tasks/hook/ament_prefix_path.sh'
+[0.458s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.458s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.462s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cody/ws_moveit/src/build/robot_arm_2025': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cody/ws_moveit/install/robot_arm_2025_tasks:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake /home/cody/ws_moveit/src/robot_arm_2025 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/cody/ws_moveit/src/install/robot_arm_2025
+[0.597s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/cody/ws_moveit/src/robot_arm_2025_control'
+[0.598s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.598s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.726s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/cody/ws_moveit/src/robot_arm_2025_tasks'
+[0.727s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.727s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.008s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cody/ws_moveit/src/build/robot_arm_2025_tasks': PYTHONPATH=/home/cody/ws_moveit/src/build/robot_arm_2025_tasks/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cody/ws_moveit/src/install/robot_arm_2025_tasks/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/cody/ws_moveit/src/build/robot_arm_2025_tasks/build --no-deps symlink_data
+[1.010s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cody/ws_moveit/src/build/robot_arm_2025_control': PYTHONPATH=/home/cody/ws_moveit/src/build/robot_arm_2025_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cody/ws_moveit/src/install/robot_arm_2025_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/cody/ws_moveit/src/build/robot_arm_2025_control/build --no-deps symlink_data
+[1.230s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_arm_2025_tasks', 'pythonpath_develop')
+[1.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cody/ws_moveit/src/build/robot_arm_2025_tasks/share/robot_arm_2025_tasks/hook/pythonpath_develop.ps1'
+[1.231s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cody/ws_moveit/src/build/robot_arm_2025_tasks' returned '0': PYTHONPATH=/home/cody/ws_moveit/src/build/robot_arm_2025_tasks/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cody/ws_moveit/src/install/robot_arm_2025_tasks/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/cody/ws_moveit/src/build/robot_arm_2025_tasks/build --no-deps symlink_data
+[1.232s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cody/ws_moveit/src/build/robot_arm_2025_tasks/share/robot_arm_2025_tasks/hook/pythonpath_develop.dsv'
+[1.232s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cody/ws_moveit/src/build/robot_arm_2025_tasks/share/robot_arm_2025_tasks/hook/pythonpath_develop.sh'
+[1.235s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_tasks' for CMake module files
+[1.236s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_tasks' for CMake config files
+[1.236s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_tasks/lib'
+[1.236s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_tasks/bin'
+[1.236s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_tasks/lib/pkgconfig/robot_arm_2025_tasks.pc'
+[1.236s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_tasks/lib/python3.10/site-packages'
+[1.236s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_arm_2025_tasks', 'pythonpath')
+[1.236s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cody/ws_moveit/src/install/robot_arm_2025_tasks/share/robot_arm_2025_tasks/hook/pythonpath.ps1'
+[1.237s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cody/ws_moveit/src/install/robot_arm_2025_tasks/share/robot_arm_2025_tasks/hook/pythonpath.dsv'
+[1.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cody/ws_moveit/src/install/robot_arm_2025_tasks/share/robot_arm_2025_tasks/hook/pythonpath.sh'
+[1.237s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_tasks/bin'
+[1.237s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_arm_2025_tasks)
+[1.237s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025_tasks/share/robot_arm_2025_tasks/package.ps1'
+[1.238s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cody/ws_moveit/src/install/robot_arm_2025_tasks/share/robot_arm_2025_tasks/package.dsv'
+[1.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025_tasks/share/robot_arm_2025_tasks/package.sh'
+[1.239s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025_tasks/share/robot_arm_2025_tasks/package.bash'
+[1.239s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025_tasks/share/robot_arm_2025_tasks/package.zsh'
+[1.240s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cody/ws_moveit/src/install/robot_arm_2025_tasks/share/colcon-core/packages/robot_arm_2025_tasks)
+[1.241s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_arm_2025_control', 'pythonpath_develop')
+[1.242s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cody/ws_moveit/src/build/robot_arm_2025_control/share/robot_arm_2025_control/hook/pythonpath_develop.ps1'
+[1.242s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cody/ws_moveit/src/build/robot_arm_2025_control' returned '0': PYTHONPATH=/home/cody/ws_moveit/src/build/robot_arm_2025_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cody/ws_moveit/src/install/robot_arm_2025_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/cody/ws_moveit/src/build/robot_arm_2025_control/build --no-deps symlink_data
+[1.242s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cody/ws_moveit/src/build/robot_arm_2025_control/share/robot_arm_2025_control/hook/pythonpath_develop.dsv'
+[1.243s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cody/ws_moveit/src/build/robot_arm_2025_control/share/robot_arm_2025_control/hook/pythonpath_develop.sh'
+[1.243s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_control' for CMake module files
+[1.243s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_control' for CMake config files
+[1.243s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_control/lib'
+[1.243s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_control/bin'
+[1.243s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_control/lib/pkgconfig/robot_arm_2025_control.pc'
+[1.244s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_control/lib/python3.10/site-packages'
+[1.244s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_arm_2025_control', 'pythonpath')
+[1.244s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cody/ws_moveit/src/install/robot_arm_2025_control/share/robot_arm_2025_control/hook/pythonpath.ps1'
+[1.244s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cody/ws_moveit/src/install/robot_arm_2025_control/share/robot_arm_2025_control/hook/pythonpath.dsv'
+[1.244s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cody/ws_moveit/src/install/robot_arm_2025_control/share/robot_arm_2025_control/hook/pythonpath.sh'
+[1.245s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_control/bin'
+[1.245s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_arm_2025_control)
+[1.245s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025_control/share/robot_arm_2025_control/package.ps1'
+[1.245s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cody/ws_moveit/src/install/robot_arm_2025_control/share/robot_arm_2025_control/package.dsv'
+[1.246s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025_control/share/robot_arm_2025_control/package.sh'
+[1.246s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025_control/share/robot_arm_2025_control/package.bash'
+[1.246s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025_control/share/robot_arm_2025_control/package.zsh'
+[1.246s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cody/ws_moveit/src/install/robot_arm_2025_control/share/colcon-core/packages/robot_arm_2025_control)
+[1.367s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cody/ws_moveit/src/build/robot_arm_2025' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cody/ws_moveit/install/robot_arm_2025_tasks:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake /home/cody/ws_moveit/src/robot_arm_2025 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/cody/ws_moveit/src/install/robot_arm_2025
+[1.368s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cody/ws_moveit/src/build/robot_arm_2025': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cody/ws_moveit/install/robot_arm_2025_tasks:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake --build /home/cody/ws_moveit/src/build/robot_arm_2025 -- -j20 -l20
+[1.388s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cody/ws_moveit/src/build/robot_arm_2025' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cody/ws_moveit/install/robot_arm_2025_tasks:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake --build /home/cody/ws_moveit/src/build/robot_arm_2025 -- -j20 -l20
+[1.394s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cody/ws_moveit/src/build/robot_arm_2025': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cody/ws_moveit/install/robot_arm_2025_tasks:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake --install /home/cody/ws_moveit/src/build/robot_arm_2025
+[1.580s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_arm_2025)
+[1.580s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025' for CMake module files
+[1.580s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cody/ws_moveit/src/build/robot_arm_2025' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cody/ws_moveit/install/robot_arm_2025_tasks:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake --install /home/cody/ws_moveit/src/build/robot_arm_2025
+[1.580s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025' for CMake config files
+[1.581s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_arm_2025', 'cmake_prefix_path')
+[1.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cody/ws_moveit/src/install/robot_arm_2025/share/robot_arm_2025/hook/cmake_prefix_path.ps1'
+[1.581s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cody/ws_moveit/src/install/robot_arm_2025/share/robot_arm_2025/hook/cmake_prefix_path.dsv'
+[1.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cody/ws_moveit/src/install/robot_arm_2025/share/robot_arm_2025/hook/cmake_prefix_path.sh'
+[1.582s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025/bin'
+[1.582s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025/lib/pkgconfig/robot_arm_2025.pc'
+[1.582s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025/lib/python3.10/site-packages'
+[1.582s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025/bin'
+[1.582s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025/share/robot_arm_2025/package.ps1'
+[1.583s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cody/ws_moveit/src/install/robot_arm_2025/share/robot_arm_2025/package.dsv'
+[1.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025/share/robot_arm_2025/package.sh'
+[1.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025/share/robot_arm_2025/package.bash'
+[1.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025/share/robot_arm_2025/package.zsh'
+[1.583s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cody/ws_moveit/src/install/robot_arm_2025/share/colcon-core/packages/robot_arm_2025)
+[1.584s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_arm_2025)
+[1.584s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025' for CMake module files
+[1.584s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025' for CMake config files
+[1.584s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_arm_2025', 'cmake_prefix_path')
+[1.585s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cody/ws_moveit/src/install/robot_arm_2025/share/robot_arm_2025/hook/cmake_prefix_path.ps1'
+[1.585s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cody/ws_moveit/src/install/robot_arm_2025/share/robot_arm_2025/hook/cmake_prefix_path.dsv'
+[1.585s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cody/ws_moveit/src/install/robot_arm_2025/share/robot_arm_2025/hook/cmake_prefix_path.sh'
+[1.585s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025/bin'
+[1.585s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025/lib/pkgconfig/robot_arm_2025.pc'
+[1.585s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025/lib/python3.10/site-packages'
+[1.586s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025/bin'
+[1.586s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025/share/robot_arm_2025/package.ps1'
+[1.586s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cody/ws_moveit/src/install/robot_arm_2025/share/robot_arm_2025/package.dsv'
+[1.586s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025/share/robot_arm_2025/package.sh'
+[1.586s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025/share/robot_arm_2025/package.bash'
+[1.587s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025/share/robot_arm_2025/package.zsh'
+[1.587s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cody/ws_moveit/src/install/robot_arm_2025/share/colcon-core/packages/robot_arm_2025)
+[1.587s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/cody/ws_moveit/src/robot_arm_2025_config' with build type 'ament_cmake'
+[1.587s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/cody/ws_moveit/src/robot_arm_2025_config'
+[1.587s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.587s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.607s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cody/ws_moveit/src/build/robot_arm_2025_config': AMENT_PREFIX_PATH=/home/cody/ws_moveit/src/install/robot_arm_2025:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cody/ws_moveit/src/install/robot_arm_2025:/home/cody/ws_moveit/install/robot_arm_2025_config:/home/cody/ws_moveit/install/robot_arm_2025:/home/cody/ws_moveit/install/robot_arm_2025_tasks:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake /home/cody/ws_moveit/src/robot_arm_2025_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/cody/ws_moveit/src/install/robot_arm_2025_config
+[2.206s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cody/ws_moveit/src/build/robot_arm_2025_config' returned '0': AMENT_PREFIX_PATH=/home/cody/ws_moveit/src/install/robot_arm_2025:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cody/ws_moveit/src/install/robot_arm_2025:/home/cody/ws_moveit/install/robot_arm_2025_config:/home/cody/ws_moveit/install/robot_arm_2025:/home/cody/ws_moveit/install/robot_arm_2025_tasks:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake /home/cody/ws_moveit/src/robot_arm_2025_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/cody/ws_moveit/src/install/robot_arm_2025_config
+[2.206s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cody/ws_moveit/src/build/robot_arm_2025_config': AMENT_PREFIX_PATH=/home/cody/ws_moveit/src/install/robot_arm_2025:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cody/ws_moveit/src/install/robot_arm_2025:/home/cody/ws_moveit/install/robot_arm_2025_config:/home/cody/ws_moveit/install/robot_arm_2025:/home/cody/ws_moveit/install/robot_arm_2025_tasks:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake --build /home/cody/ws_moveit/src/build/robot_arm_2025_config -- -j20 -l20
+[2.224s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cody/ws_moveit/src/build/robot_arm_2025_config' returned '0': AMENT_PREFIX_PATH=/home/cody/ws_moveit/src/install/robot_arm_2025:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cody/ws_moveit/src/install/robot_arm_2025:/home/cody/ws_moveit/install/robot_arm_2025_config:/home/cody/ws_moveit/install/robot_arm_2025:/home/cody/ws_moveit/install/robot_arm_2025_tasks:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake --build /home/cody/ws_moveit/src/build/robot_arm_2025_config -- -j20 -l20
+[2.225s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cody/ws_moveit/src/build/robot_arm_2025_config': AMENT_PREFIX_PATH=/home/cody/ws_moveit/src/install/robot_arm_2025:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cody/ws_moveit/src/install/robot_arm_2025:/home/cody/ws_moveit/install/robot_arm_2025_config:/home/cody/ws_moveit/install/robot_arm_2025:/home/cody/ws_moveit/install/robot_arm_2025_tasks:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake --install /home/cody/ws_moveit/src/build/robot_arm_2025_config
+[2.373s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_arm_2025_config)
+[2.373s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_config' for CMake module files
+[2.374s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cody/ws_moveit/src/build/robot_arm_2025_config' returned '0': AMENT_PREFIX_PATH=/home/cody/ws_moveit/src/install/robot_arm_2025:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cody/ws_moveit/src/install/robot_arm_2025:/home/cody/ws_moveit/install/robot_arm_2025_config:/home/cody/ws_moveit/install/robot_arm_2025:/home/cody/ws_moveit/install/robot_arm_2025_tasks:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake --install /home/cody/ws_moveit/src/build/robot_arm_2025_config
+[2.374s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_config' for CMake config files
+[2.374s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_arm_2025_config', 'cmake_prefix_path')
+[2.374s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cody/ws_moveit/src/install/robot_arm_2025_config/share/robot_arm_2025_config/hook/cmake_prefix_path.ps1'
+[2.375s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cody/ws_moveit/src/install/robot_arm_2025_config/share/robot_arm_2025_config/hook/cmake_prefix_path.dsv'
+[2.375s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cody/ws_moveit/src/install/robot_arm_2025_config/share/robot_arm_2025_config/hook/cmake_prefix_path.sh'
+[2.375s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_config/bin'
+[2.375s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_config/lib/pkgconfig/robot_arm_2025_config.pc'
+[2.376s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_config/lib/python3.10/site-packages'
+[2.376s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_config/bin'
+[2.376s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025_config/share/robot_arm_2025_config/package.ps1'
+[2.376s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cody/ws_moveit/src/install/robot_arm_2025_config/share/robot_arm_2025_config/package.dsv'
+[2.376s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025_config/share/robot_arm_2025_config/package.sh'
+[2.376s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025_config/share/robot_arm_2025_config/package.bash'
+[2.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025_config/share/robot_arm_2025_config/package.zsh'
+[2.377s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cody/ws_moveit/src/install/robot_arm_2025_config/share/colcon-core/packages/robot_arm_2025_config)
+[2.378s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_arm_2025_config)
+[2.378s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_config' for CMake module files
+[2.378s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_config' for CMake config files
+[2.378s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_arm_2025_config', 'cmake_prefix_path')
+[2.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cody/ws_moveit/src/install/robot_arm_2025_config/share/robot_arm_2025_config/hook/cmake_prefix_path.ps1'
+[2.379s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cody/ws_moveit/src/install/robot_arm_2025_config/share/robot_arm_2025_config/hook/cmake_prefix_path.dsv'
+[2.379s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cody/ws_moveit/src/install/robot_arm_2025_config/share/robot_arm_2025_config/hook/cmake_prefix_path.sh'
+[2.379s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_config/bin'
+[2.379s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_config/lib/pkgconfig/robot_arm_2025_config.pc'
+[2.379s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_config/lib/python3.10/site-packages'
+[2.379s] Level 1:colcon.colcon_core.environment:checking '/home/cody/ws_moveit/src/install/robot_arm_2025_config/bin'
+[2.379s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025_config/share/robot_arm_2025_config/package.ps1'
+[2.380s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cody/ws_moveit/src/install/robot_arm_2025_config/share/robot_arm_2025_config/package.dsv'
+[2.380s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025_config/share/robot_arm_2025_config/package.sh'
+[2.380s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025_config/share/robot_arm_2025_config/package.bash'
+[2.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/cody/ws_moveit/src/install/robot_arm_2025_config/share/robot_arm_2025_config/package.zsh'
+[2.381s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cody/ws_moveit/src/install/robot_arm_2025_config/share/colcon-core/packages/robot_arm_2025_config)
+[2.381s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.381s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.382s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.382s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.474s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[2.474s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.475s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.475s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.475s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[2.475s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.475s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cody/ws_moveit/src/install/local_setup.ps1'
+[2.476s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/cody/ws_moveit/src/install/_local_setup_util_ps1.py'
+[2.477s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cody/ws_moveit/src/install/setup.ps1'
+[2.478s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cody/ws_moveit/src/install/local_setup.sh'
+[2.478s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/cody/ws_moveit/src/install/_local_setup_util_sh.py'
+[2.479s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cody/ws_moveit/src/install/setup.sh'
+[2.479s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cody/ws_moveit/src/install/local_setup.bash'
+[2.480s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cody/ws_moveit/src/install/setup.bash'
+[2.480s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cody/ws_moveit/src/install/local_setup.zsh'
+[2.481s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cody/ws_moveit/src/install/setup.zsh'

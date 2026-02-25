@@ -1,0 +1,60 @@
+[0.021s] Invoking command in '/home/cody/ws_moveit/build/robot_arm_2025_config': CMAKE_PREFIX_PATH=/home/cody/ws_moveit/install/robot_arm_2025:/home/cody/ws_moveit/install/robot_arm_2025_config:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake /home/cody/ws_moveit/src/robot_arm_2025_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/cody/ws_moveit/install/robot_arm_2025_config
+[0.080s] -- The C compiler identification is GNU 11.4.0
+[0.237s] -- The CXX compiler identification is GNU 11.4.0
+[0.321s] -- Detecting C compiler ABI info
+[0.387s] -- Detecting C compiler ABI info - done
+[0.391s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.391s] -- Detecting C compile features
+[0.391s] -- Detecting C compile features - done
+[0.393s] -- Detecting CXX compiler ABI info
+[0.464s] -- Detecting CXX compiler ABI info - done
+[0.469s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.469s] -- Detecting CXX compile features
+[0.469s] -- Detecting CXX compile features - done
+[0.470s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.561s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.597s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.649s] -- Configuring done
+[0.651s] -- Generating done
+[0.652s] -- Build files have been written to: /home/cody/ws_moveit/build/robot_arm_2025_config
+[0.655s] Invoked command in '/home/cody/ws_moveit/build/robot_arm_2025_config' returned '0': CMAKE_PREFIX_PATH=/home/cody/ws_moveit/install/robot_arm_2025:/home/cody/ws_moveit/install/robot_arm_2025_config:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake /home/cody/ws_moveit/src/robot_arm_2025_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/cody/ws_moveit/install/robot_arm_2025_config
+[0.656s] Invoking command in '/home/cody/ws_moveit/build/robot_arm_2025_config': CMAKE_PREFIX_PATH=/home/cody/ws_moveit/install/robot_arm_2025:/home/cody/ws_moveit/install/robot_arm_2025_config:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake --build /home/cody/ws_moveit/build/robot_arm_2025_config -- -j20 -l20
+[0.676s] Invoked command in '/home/cody/ws_moveit/build/robot_arm_2025_config' returned '0': CMAKE_PREFIX_PATH=/home/cody/ws_moveit/install/robot_arm_2025:/home/cody/ws_moveit/install/robot_arm_2025_config:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake --build /home/cody/ws_moveit/build/robot_arm_2025_config -- -j20 -l20
+[0.678s] Invoking command in '/home/cody/ws_moveit/build/robot_arm_2025_config': CMAKE_PREFIX_PATH=/home/cody/ws_moveit/install/robot_arm_2025:/home/cody/ws_moveit/install/robot_arm_2025_config:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake --install /home/cody/ws_moveit/build/robot_arm_2025_config
+[0.682s] -- Install configuration: ""
+[0.682s] -- Execute custom install script
+[0.683s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/ament_index/resource_index/package_run_dependencies/robot_arm_2025_config
+[0.688s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/ament_index/resource_index/parent_prefix_path/robot_arm_2025_config
+[0.693s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/environment/ament_prefix_path.sh
+[0.698s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/environment/ament_prefix_path.dsv
+[0.703s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/environment/path.sh
+[0.707s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/environment/path.dsv
+[0.712s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/local_setup.bash
+[0.717s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/local_setup.sh
+[0.722s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/local_setup.zsh
+[0.727s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/local_setup.dsv
+[0.731s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/package.dsv
+[0.736s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/ament_index/resource_index/packages/robot_arm_2025_config
+[0.741s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/cmake/robot_arm_2025_configConfig.cmake
+[0.745s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/cmake/robot_arm_2025_configConfig-version.cmake
+[0.749s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/package.xml
+[0.754s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/launch/demo.launch.py
+[0.759s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/launch/move_group.launch.py
+[0.763s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/launch/moveit_rviz.launch.py
+[0.768s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/launch/rsp.launch.py
+[0.773s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/launch/setup_assistant.launch.py
+[0.777s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/launch/spawn_controllers.launch.py
+[0.782s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/launch/static_virtual_joint_tfs.launch.py
+[0.786s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/launch/warehouse_db.launch.py
+[0.791s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/config/initial_positions.yaml
+[0.796s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/config/joint_limits.yaml
+[0.800s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/config/kinematics.yaml
+[0.805s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/config/moveit.rviz
+[0.810s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/config/moveit_controllers.yaml
+[0.814s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/config/pilz_cartesian_limits.yaml
+[0.819s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/config/robot_arm_2025.ros2_control.xacro
+[0.824s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/config/robot_arm_2025.srdf
+[0.828s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/config/robot_arm_2025.urdf.xacro
+[0.833s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/config/ros2_controllers.yaml
+[0.838s] -- Symlinking: /home/cody/ws_moveit/install/robot_arm_2025_config/share/robot_arm_2025_config/.setup_assistant
+[0.844s] Invoked command in '/home/cody/ws_moveit/build/robot_arm_2025_config' returned '0': CMAKE_PREFIX_PATH=/home/cody/ws_moveit/install/robot_arm_2025:/home/cody/ws_moveit/install/robot_arm_2025_config:/home/cody/ws_moveit/install/robot_arm_2025_control:/opt/ros/humble /usr/bin/cmake --install /home/cody/ws_moveit/build/robot_arm_2025_config

@@ -1,0 +1,8 @@
+# Default initial positions for robot_arm_2025's ros2_control fake system
+
+initial_positions:
+  J1: 0
+  J2: 0
+  J3: 0
+  J4: 0
+  J5: 0
