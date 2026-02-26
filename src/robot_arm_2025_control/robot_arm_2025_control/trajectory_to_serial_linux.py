@@ -15,7 +15,7 @@ class TrajectoryToSerial(Node):
         super().__init__('trajectory_to_serial')
 
         # ---- Serial Setup ----
-        try: # CHANGE TO DEVICE SPECIFIC SERIAL vvvvvvvv
+        try:
             self.serial_port = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
             time.sleep(2)
             self.get_logger().info("Serial connection established.")

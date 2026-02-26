@@ -1,0 +1,37 @@
+# ==============================
+# ROS 2 Humble Auto Setup
+# ==============================
+
+source /opt/ros/humble/setup.bash
+
+if [ -f ~/ws_moveit/install/setup.bash ]; then
+    source ~/ws_moveit/install/setup.bash
+fi
+
+export ROS_DOMAIN_ID=0
+
+# ----- Aliases -----
+alias cb='colcon build --symlink-install'
+alias cbs='colcon build --symlink-install --packages-select'
+alias s='source ~/.bashrc'
+alias ws='cd ~/ws_moveit'
+alias sr='source install/setup.bash'
+alias rl='ros2 launch'
+alias rr='ros2 run'
+alias rt='ros2 topic list'
+alias rn='ros2 node list'
+alias rparam='ros2 param list'
+alias roshelp='cat ~/Documents/roshelp_files/roshelp'
+alias roshelp_cmd='cat ~/Documents/roshelp_files/roshelp_cmd'
+alias roshelp_cmdstr='cat ~/Documents/roshelp_files/roshelp_cmdstr'
+alias roshelp_debug='cat ~/Documents/roshelp_files/roshelp_debug'
+
+# ----- Show ROS distro in prompt -----
+parse_ros() {
+    if [ -n "$ROS_DISTRO" ]; then
+        echo "[$ROS_DISTRO]"
+    fi
+}
+PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\
+\[\033[01;34m\]\w\[\033[00m\] \
+\[\033[01;35m\]$(parse_ros)\[\033[00m\]\$ '
