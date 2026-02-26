@@ -1,1 +1,0 @@
-/home/cody/ws_moveit/build/robot_arm_2025_config/ament_cmake_environment_hooks/local_setup.zsh

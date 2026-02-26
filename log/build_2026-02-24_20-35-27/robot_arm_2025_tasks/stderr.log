@@ -1,5 +1,0 @@
-  File "/home/cody/ws_moveit/install/robot_arm_2025_tasks/lib/python3.10/site-packages/robot_arm_2025_tasks/typing_node.py", line 223
-    qz=0.0,s
-           
-SyntaxError: invalid syntax. Perhaps you forgot a comma?
-

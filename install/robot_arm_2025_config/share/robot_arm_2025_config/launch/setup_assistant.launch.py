@@ -1,1 +1,0 @@
-/home/cody/ws_moveit/src/robot_arm_2025_config/launch/setup_assistant.launch.py
