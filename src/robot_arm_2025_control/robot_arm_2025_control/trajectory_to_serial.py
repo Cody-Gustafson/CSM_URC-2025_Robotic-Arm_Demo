@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 
-import serial
+import math
 import time
+
 import rclpy
 from rclpy.node import Node
-from moveit_msgs.msg import DisplayTrajectory
-from sensor_msgs.msg import JointState
-import math
+from trajectory_msgs.msg import JointTrajectory
+
+import serial
 
 
 class TrajectoryToSerial(Node):
@@ -14,136 +15,93 @@ class TrajectoryToSerial(Node):
     def __init__(self):
         super().__init__('trajectory_to_serial')
 
-        # ---- Serial Setup ----
-        try: # CHANGE TO DEVICE SPECIFIC SERIAL vvvvvvvv
-            self.serial_port = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
+        self.declare_parameter('serial_port', '/dev/ttyACM0')
+        self.declare_parameter('baud_rate', 115200)
+        self.declare_parameter('trajectory_topic', '/arm_controller/joint_trajectory')
+        self.declare_parameter('ack_timeout_sec', 1.0)
+
+        serial_port_name = self.get_parameter('serial_port').get_parameter_value().string_value
+        baud_rate = self.get_parameter('baud_rate').get_parameter_value().integer_value
+        trajectory_topic = self.get_parameter('trajectory_topic').get_parameter_value().string_value
+        self.ack_timeout_sec = self.get_parameter('ack_timeout_sec').get_parameter_value().double_value
+
+
+        try:
+            self.serial_port = serial.Serial(serial_port_name, baud_rate, timeout=self.ack_timeout_sec)
             time.sleep(2)
-            self.get_logger().info("Serial connection established.")
-        except Exception as e:
-            self.get_logger().error(f"Failed to open serial port: {e}")
+            self.get_logger().info(f"Serial connection established on {serial_port_name} @ {baud_rate} baud.")
+        except Exception as exc:
+            self.get_logger().error(f"Failed to open serial port '{serial_port_name}': {exc}")
             self.serial_port = None
 
-        # ---- ROS Subscription ----
         self.subscription = self.create_subscription(
-            DisplayTrajectory,
-            '/display_planned_path',
+            JointTrajectory,
+            trajectory_topic,
             self.trajectory_callback,
-            10
+            10,
         )
 
-        self.get_logger().info("Trajectory listener started.")
+        self.get_logger().info(f"Listening for controller output on '{trajectory_topic}'.")
 
-        # ---- Joint State Publisher ----
-        self.joint_state_pub = self.create_publisher(
-            JointState,
-            '/joint_states',
-            10
-        )
-
-        self.joint_names = [
-            'J1',
-            'J2',
-            'J3',
-            'J4',
-            'J5'
-        ]
-
-        # Track current joint positions internally (radians!)
-        self.current_joint_positions = [0.0, 0.0, 0.0, 0.0, 0.0]
-
-        # ---- Repeat Publisher ----
-        self.joint_state_timer = self.create_timer(
-            0.033,  # 30 Hz
-            self.publish_joint_state
-        )
-
-    # =====================================================
-
-    def publish_joint_state(self):
-
-        msg = JointState()
-        msg.header.stamp = self.get_clock().now().to_msg()
-        msg.name = self.joint_names
-        msg.position = self.current_joint_positions
-
-        self.joint_state_pub.publish(msg)
-
-    # =====================================================
-
-    def trajectory_callback(self, msg):
-
-        if not msg.trajectory:
+    def trajectory_callback(self, msg: JointTrajectory):
+        if not msg.points:
             return
 
-        traj = msg.trajectory[0].joint_trajectory
+        self.get_logger().info(f"Received trajectory with {len(msg.points)} point(s).")
+        previous_time = 0.0
 
-        if not traj.points:
-            return
+        for point in msg.points:
+            point_time = point.time_from_start.sec + point.time_from_start.nanosec * 1e-9
+            sleep_time = max(0.0, point_time - previous_time)
+            if sleep_time > 0.0:
+                time.sleep(sleep_time)
+            previous_time = point_time
 
-        # Get final waypoint (in radians)
-        final_point = traj.points[-1]
-        joint_names = traj.joint_names
-        positions = final_point.positions
+            payload = self.convert_point_to_serial_message(msg.joint_names, point.positions)
+            self.send_to_serial(payload)
 
-        # Update internal joint state BEFORE motor conversion
-        self.current_joint_positions = list(positions)
-        self.publish_joint_state()
-
+    def convert_point_to_serial_message(self, joint_names, positions):
         joint_dict = dict(zip(joint_names, positions))
 
-        # Extract MoveIt joints (radians)
-        J1 = joint_dict.get('J1', 0.0)
-        J2 = joint_dict.get('J2', 0.0)
-        J3 = joint_dict.get('J3', 0.0)
-        J4 = joint_dict.get('J4', 0.0)
-        J5 = joint_dict.get('J5', 0.0)
+        j1 = joint_dict.get('J1', 0.0)
+        j2 = joint_dict.get('J2', 0.0)
+        j3 = joint_dict.get('J3', 0.0)
+        j4 = joint_dict.get('J4', 0.0)
+        j5 = joint_dict.get('J5', 0.0)
 
-        # ---- Parallelogram compensation ----
-        motor_J1 = J1
-        motor_J2 = J2
-        motor_J3 = -(J3 + J2)
-        motor_J4 = J4
-        motor_J5 = J5
+        motor_j1 = j1
+        motor_j2 = j2
+        motor_j3 = -(j3 + j2)
+        motor_j4 = j4
+        motor_j5 = j5
 
-        # ---- Convert to degrees ----
         rad_to_deg = 180.0 / math.pi
+        servo_values = [
+            motor_j1 * rad_to_deg + 90.0,
+            motor_j2 * rad_to_deg + 90.0,
+            motor_j3 * rad_to_deg + 90.0,
+            motor_j4 * rad_to_deg + 90.0,
+            motor_j5 * rad_to_deg + 90.0,
+        ]
 
-        motor_J1 = motor_J1 * rad_to_deg + 90
-        motor_J2 = motor_J2 * rad_to_deg + 90
-        motor_J3 = motor_J3 * rad_to_deg + 90
-        motor_J4 = motor_J4 * rad_to_deg + 90
-        motor_J5 = motor_J5 * rad_to_deg + 90
+        clamped = [min(max(value, 0.0), 180.0) for value in servo_values]
+        return f"{clamped[0]:.2f},{clamped[1]:.2f},{clamped[2]:.2f},{clamped[3]:.2f},{clamped[4]:.2f}\n"
 
-        # ---- Clamp servo range ----
-        def clamp(val, min_val=0, max_val=180):
-            return max(min(val, max_val), min_val)
+    def send_to_serial(self, message: str):
+        if self.serial_port is None:
+            self.get_logger().warning(f"Serial unavailable, skipped command: {message.strip()}")
+            return
 
-        motor_J1 = clamp(motor_J1)
-        motor_J2 = clamp(motor_J2)
-        motor_J3 = clamp(motor_J3)
-        motor_J4 = clamp(motor_J4)
-        motor_J5 = clamp(motor_J5)
+        try:
+            self.serial_port.write(message.encode())
+            self.get_logger().info(f"Sent: {message.strip()}")
 
-        # ---- Format CSV Message ----
-        message = f"{motor_J1:.2f},{motor_J2:.2f},{motor_J3:.2f},{motor_J4:.2f},{motor_J5:.2f}\n"
+            response = self.serial_port.readline().decode(errors='ignore').strip()
+            if response:
+                self.get_logger().info(f"Arduino says: {response}")
+        except Exception as exc:
+            self.get_logger().error(f"Serial write failed: {exc}")
 
-        # ---- Send Over Serial ----
-        if self.serial_port is not None:
-            try:
-                self.serial_port.write(message.encode())
-                self.get_logger().info(f"Sent: {message.strip()}")
-
-                while True:
-                    response = self.serial_port.readline().decode(errors='ignore').strip()
-                    if response:
-                        print("Arduino says:", response)
-                    if response in ["OK", "PARSE_FAIL"]:
-                        break
-            except Exception as e:
-                self.get_logger().error(f"Serial write failed: {e}")
-
-
-# =====================================================
 
 def main(args=None):
     rclpy.init(args=args)
