@@ -1,0 +1,23 @@
+=================
+  SETUP SERIAL
+=================
+Attach serial communication (Windows console):
+usbipd attach --wsl --busid 2-4
+
+=================
+    SETUP ROS
+=================
+Launch Moveit display:
+rl robot_arm_2025_config demo.launch.py
+
+Launch serial communication:
+rr robot_arm_2025_control trajectory_to_serial
+
+=================
+    RUN TASKS
+=================
+Run keyboard module:
+rr robot_arm_2025_tasks typing_node
+
+Build only keyboard module:
+cbs robot_arm_2025_tasks
