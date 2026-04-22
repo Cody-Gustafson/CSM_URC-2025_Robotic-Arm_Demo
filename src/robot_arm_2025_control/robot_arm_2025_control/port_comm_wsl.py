@@ -19,12 +19,19 @@ class PortCommWSL(Node):
         
         # Command Sender (PUSH)
         self.command_sender = self.zmq_context.socket(zmq.PUSH)
-        self.command_sender.connect(f"tcp://{host_ip}:5000")
+        self.command_sender.connect(f"tcp://{host_ip}:5001")
+        self.get_logger().info("Sender opened on port 5001")
         
         # Feedback Receiver (SUB)
         self.feedback_receiver = self.zmq_context.socket(zmq.SUB)
         self.feedback_receiver.connect(f"tcp://{host_ip}:5005")
         self.feedback_receiver.setsockopt_string(zmq.SUBSCRIBE, "")
+        self.get_logger().info("Receiver opened on port 5050")
+
+        # UI Command Receiver (SUB)
+        self.ui_receiver = self.zmq_context.socket(zmq.SUB)
+        self.ui_receiver.connect(f"tcp://{host_ip}:5010")
+        self.ui_receiver.setsockopt_string(zmq.SUBSCRIBE, "SOLVE") # Only listen for messages starting with "SOLVE"
 
         # --- 2. ROS SETUP ---
         # NOTE: Change these names to exactly match the joint names in your URDF!
@@ -73,6 +80,28 @@ class PortCommWSL(Node):
     def poll_zmq_feedback(self):
         """Triggered 100 times a second by the ROS timer to check for feedback."""
         try:
+            # Check for commands from the web UI
+            cmd_bytes = self.ui_receiver.recv(flags=zmq.NOBLOCK)
+            cmd_str = cmd_bytes.decode('utf-8')
+            
+            if cmd_str.startswith("SOLVE"):
+                # Split the string "SOLVE 200 0 150" into parts
+                parts = cmd_str.split()
+                if len(parts) == 4:
+                    x = float(parts[1])
+                    y = float(parts[2])
+                    z = float(parts[3])
+                    self.get_logger().info(f"UI Requested IK Solve: X={x}, Y={y}, Z={z}")
+                    
+                    # -> CALl YOUR MOVEIT PLANNING FUNCTION HERE <-
+                    # self.plan_and_execute_ik(x, y, z)
+                    
+        except zmq.Again:
+            pass # No UI command this tick
+        except Exception as e:
+            self.get_logger().error(f"Error parsing UI command: {e}")
+
+        try:
             # Non-blocking receive
             feedback_bytes = self.feedback_receiver.recv(flags=zmq.NOBLOCK)
             
@@ -113,6 +142,7 @@ class PortCommWSL(Node):
         """Cleanup ZMQ sockets when ROS shuts down."""
         self.command_sender.close()
         self.feedback_receiver.close()
+        self.ui_receiver.close()
         self.zmq_context.term()
         super().destroy_node()
 
